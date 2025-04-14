@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+    }
+    header h1 {
+      color: #e50914;
+      margin: 0;
+    }
+    .movie-row {
+      padding: 20px;
+    }
+    .movie-row h2 {
+      margin: 0 0 10px 10px;
+    }
+    .movie-list {
+      display: flex;
+      overflow-x: auto;
+      padding: 10px;
+    }
+    .movie {
+      flex: 0 0 auto;
+      margin-right: 10px;
+      width: 200px;
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .movie:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Netflix</h1>
+    <p>Welcome!</p>
+  </header>
+
+  <div class="movie-row">
+    <h2>Trending Now</h2>
+    <div class="movie-list">
+      <div class="movie" style="background-image: url('https://image.tmdb.org/t/p/w500/8YFL5QQVPy3AgrEQxNYVSgiPEbe.jpg');"></div>
+      <div class="movie" style="background-image: url('https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg');"></div>
+      <div class="movie" style="background-image: url('https://image.tmdb.org/t/p/w500/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg');"></div>
+      <div class="movie" style="background-image: url('https://image.tmdb.org/t/p/w500/jTNYlTEijZ6c8Mn4gvINOeB2HWM.jpg');"></div>
+      <div class="movie" style="background-image: url('https://image.tmdb.org/t/p/w500/4ZocdxnOO6q2UbdKye2wgofLFhB.jpg');"></div>
+    </div>
+  </div>
+
+  <div class="movie-row">
+    <h2>Top Picks</h2>
+    <div class="movie-list">
+      <div class="movie" style="background-image: url('https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg');"></div>
+      <div class="movie" style="background-image: url('https://image.tmdb.org/t/p/w500/kgrLpJcLBbyhWIkK7fx1fM4iSvf.jpg');"></div>
+    </div>
+  </div>
+
+</body>
+</html>
